@@ -17,6 +17,11 @@ namespace Website_Movie_Castle.Controllers
         {
             return View();
         }
+        [Route("Films")]
+        public IActionResult Films()
+        {
+            return View();
+        }
 
         public IActionResult Privacy()
         {
