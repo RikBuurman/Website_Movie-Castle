@@ -22,6 +22,12 @@ namespace Website_Movie_Castle.Controllers
         {
             return View();
         }
+
+        [Route("Aboutus")]
+        public IActionResult Aboutus()
+        {
+            return View();
+        }
         [Route("Contact")]
         public IActionResult Contact()
         {
