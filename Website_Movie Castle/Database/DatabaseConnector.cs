@@ -17,7 +17,7 @@ namespace Website_Movie_Castle.Database
 
 
                 // verbinding maken met de database
-                using (MySqlConnection conn = new MySqlConnection(connectionString))
+                /*using (MySqlConnection conn = new MySqlConnection(connectionString))
                 {
                     // verbinding openen
                     conn.Open();
@@ -44,7 +44,7 @@ namespace Website_Movie_Castle.Database
                             rows.Add(row);
                         }
                     }
-                }
+                }*/
 
                 // return de lijst met namen
                 return rows;
