@@ -6,15 +6,15 @@ body {
     font-size: 16px;
     line-height: 1.5;
     color: white;
-    background-color:darkred;
+    background-color: #B30E2A;
 }
 
 /* Style header and navigation bar */
-.navbar-light .navbar-brand  {
+.navbar-light .navbar-brand {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: darkred;
+    background-color: #B30E2A;
     padding: 20px;
     color: white;
 }
