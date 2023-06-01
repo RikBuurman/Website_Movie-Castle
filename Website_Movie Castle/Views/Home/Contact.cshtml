@@ -10,23 +10,27 @@
 <div  clas='container'>
   <form action="action_page.php">
 
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    <label for="vnaam">Voornaam</label>
+    <input type="text" id="vnaaam" name="voormaan" placeholder="Uw voornaam...">
 
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <label for="anaam">Achternaam</label>
+    <input type="text" id="anaam" name="achternaam" placeholder="Uw achternaam...">
 
-    <label for="country">Country</label>
-    <select id="country" name="country">
-      <option value="australia">Australia</option>
-      <option value="canada">Canada</option>
-      <option value="usa">USA</option>
+    <label for="reden">Reden van Contact</label>
+    <select id="reden" name="Reden">
+      <option value="vraag">Vraag</option>
+      <option value="soliciteren">Soliciteren</option>
+      <option value="opmerking">Opmerking</option>
+      <option value="feedback">Feedback</option>
     </select>
 
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    <label for="onderwerp">Onderwerp</label>
+    <input type="text" id="onderwerp" name="Onderwerp" placeholder="Onderwerp...">
 
-    <input type="submit" value="Submit">
+    <label for="">Onderwerp</label>
+    <textarea id="informatie" name="Informatie" placeholder="Typ hier uw vraag, opmerking, solicitatieverzoek of feedback..." style="height:200px"></textarea>
+
+    <input type="submit" value="Verzend">
 
   </form>
 </div>

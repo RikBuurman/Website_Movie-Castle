@@ -1,16 +1,11 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    color:white;
-}
+
 
 /* Apply default styles to body */
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1.5;
-    color: #333;
+    color: white;
     background-color:darkred;
 }
 
@@ -33,7 +28,7 @@ input[type=text], select, textarea {
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-top: 6px; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 /* Style the submit button with a specific background color etc */
@@ -46,7 +41,7 @@ input[type=submit] {
     cursor: pointer;
 }
 
-    /* When moving the mouse over the submit button, add a darker green color */
+    /* Andere kleurtint bij het 'hoveren' over de verzend-knop */
     input[type=submit]:hover {
         background-color: #45a049;
     }
