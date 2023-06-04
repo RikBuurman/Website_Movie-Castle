@@ -11,24 +11,27 @@
   <form action="action_page.php">
 
     <label for="vnaam">Voornaam</label>
-    <input type="text" id="vnaaam" name="voormaan" placeholder="Uw voornaam...">
+    <input type="text" id="vnaaam" name="voormaan" placeholder="Uw voornaam..." required>
 
     <label for="anaam">Achternaam</label>
-    <input type="text" id="anaam" name="achternaam" placeholder="Uw achternaam...">
+    <input type="text" id="anaam" name="achternaam" placeholder="Uw achternaam..." required>
+    
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Uw e-mailadres..." required>
 
     <label for="reden">Reden van Contact</label>
     <select id="reden" name="Reden">
       <option value="vraag">Vraag</option>
-      <option value="soliciteren">Soliciteren</option>
+      <option value="solliciteren">Soliciteren</option>
       <option value="opmerking">Opmerking</option>
       <option value="feedback">Feedback</option>
     </select>
 
     <label for="onderwerp">Onderwerp</label>
-    <input type="text" id="onderwerp" name="Onderwerp" placeholder="Onderwerp...">
+    <input type="text" id="onderwerp" name="Onderwerp" placeholder="Onderwerp..." required>
 
     <label for="">Onderwerp</label>
-    <textarea id="informatie" name="Informatie" placeholder="Typ hier uw vraag, opmerking, solicitatieverzoek of feedback..." style="height:200px"></textarea>
+    <textarea id="informatie" name="Informatie" placeholder="Typ hier uw vraag, opmerking, solicitatieverzoek of feedback..." style="height:200px" required ></textarea>
 
     <input type="submit" value="Verzend">
 

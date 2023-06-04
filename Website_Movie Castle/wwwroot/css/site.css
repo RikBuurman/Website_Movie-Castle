@@ -19,21 +19,32 @@ body {
     color: white;
 }
 
-/* Style inputs with type="text", select elements and textareas */
+/* De CSS code voor de input van de gebruiker (witte vlakken) */
 input[type=text], select, textarea {
     width: 100%; 
     padding: 12px; 
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+    border: 1px solid #ccc; /* grijze randen */
+    border-radius: 4px; /* ronde randen */
+    box-sizing: border-box; /* padding zelfde plek */
+    margin-top: 6px; /* margin bovenkant */
+    margin-bottom: 16px; /* margin onderkant */
+    resize: vertical; /* Tekstbalk is verticaal aanpasbaar */
 }
 
-/* Style the submit button with a specific background color etc */
+input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc; /* grijze randen */
+    border-radius: 4px; /* ronde randen */
+    box-sizing: border-box; /* padding zelfde plek */
+    margin-top: 6px; /* margin bovenkant */
+    margin-bottom: 16px; /* margin onderkant */
+    resize: vertical; /* Tekstbalk is verticaal aanpasbaar */
+}
+
+/* CSS code voor de verzend knop (zoals kleur etc) */
 input[type=submit] {
-    background-color: #04AA6D;
+    background-color: #C75910;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -43,10 +54,10 @@ input[type=submit] {
 
     /* Andere kleurtint bij het 'hoveren' over de verzend-knop */
     input[type=submit]:hover {
-        background-color: #45a049;
+        background-color: #E0B114;
     }
 
-/* Add a background color and some padding around the form */
+
 .container {
     border-radius: 5px;
     padding: 20px;
