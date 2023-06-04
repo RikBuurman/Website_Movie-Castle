@@ -4,66 +4,96 @@
     ViewData["Title"] = "Home Page";
 }
 <head>
-  <style>
-    .container {
-      position: relative;
-      width: screen-width;
-      height: 500px;
-      overflow: hidden;
-    }
+    <style>
+        .container {
+            position: relative;
+            width: 1000px;
+            height: 500px;
+            overflow: hidden;
+        }
 
-    .image {
-      position: absolute;
-      top: 0;
-      transition: transform 0.8s ease;
-    }
+        .image {
+            position: absolute;
+            top: 0;
+            transition: transform 0.8s ease;
+        }
 
-    .image1 {
-      left: 50px;
-    }
+        .image1 {
+            left: 50px;
+        }
 
-    .image2 {
-      left: 350px;
-    }
-    .move-left {
-      position: absolute;
-      top: 220px;
-      left: 500px;
-    }
-    .move-aside {
-      position: absolute;
-      top: 220px;
-      left: 50px;
-    }
-  </style>
+        .image2 {
+            left: 350px;
+        }
+
+        .image3 {
+            left: 650px;
+        }
+
+        .image4 {
+            left: -250px;
+        }
+
+        .image5 {
+            left: 950px;
+        }
+
+        .move-left {
+            position: absolute;
+            top: 220px;
+            left: 900px;
+        }
+
+        .move-aside {
+            position: absolute;
+            top: 220px;
+            left: 50px;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <img class="image image1" src="https://th.bing.com/th/id/OIP.KNfIqaD92jvecpbxNWWQ4wAAAA?pid=ImgDet&rs=1" width="250" height="375">
-    <img class="image image2" src="https://www.themoviedb.org/t/p/w500/1NqwE6LP9IEdOZ57NCT51ftHtWT.jpg" width="250" height="375">
-  </div>
+    <div class="container">
+        <img class="image image1" src="https://th.bing.com/th/id/OIP.KNfIqaD92jvecpbxNWWQ4wAAAA?pid=ImgDet&rs=1" width="250" height="375">
+        <img class="image image2" src="https://www.themoviedb.org/t/p/w500/1NqwE6LP9IEdOZ57NCT51ftHtWT.jpg" width="250" height="375">
+        <img class="image image3" src="https://images.pathe-thuis.nl/32418_450x640.jpg" width="250" height="375">
+        <img class="image image4" src="https://amc-theatres-res.cloudinary.com/image/upload/f_auto,fl_lossy,h_465,q_auto,w_310/v1676302257/amc-cdn/production/2/movies/62400/62358/PosterDynamic/149048.jpg" width="250" height="375">
+        <img class="image image5" src="https://assets.voxcinemas.com/posters/P_HO00009455.jpg" width="250" height="375">
+    </div>
 
-  <button class="move-aside" onclick="moveImagesAside()">←</button>
+    <button class="move-aside" onclick="moveImagesAside()">←</button>
 
-  <script>
-    function moveImagesAside() {
-      var image1 = document.querySelector('.image1');
-      var image2 = document.querySelector('.image2');
+    <script>
+        function moveImagesAside() {
+            var image1 = document.querySelector('.image1');
+            var image2 = document.querySelector('.image2');
+            var image3 = document.querySelector('.image3');
+            var image4 = document.querySelector('.image4');
+            var image5 = document.querySelector('.image5');
 
-      image1.style.transform = 'translateX(250px)';
-      image2.style.transform = 'translateX(250px)';
-    }
-  </script>
+            image1.style.transform = 'translateX(250px)';
+            image2.style.transform = 'translateX(250px)';
+            image3.style.transform = 'translateX(250px)';
+            image4.style.transform = 'translateX(250px)';
+            image5.style.transform = 'translateX(250px)';
+        }
+    </script>
 
-   <button class="move-left" onclick="moveImagesleft()">←</button>
+    <button class="move-left" onclick="moveImagesleft()">→</button>
 
-  <script>
-    function moveImagesleft() {
-      var image1 = document.querySelector('.image1');
-      var image2 = document.querySelector('.image2');
+    <script>
+        function moveImagesleft() {
+            var image1 = document.querySelector('.image1');
+            var image2 = document.querySelector('.image2');
+            var image3 = document.querySelector('.image3');
+            var image4 = document.querySelector('.image4');
+            var image5 = document.querySelector('.image5');
 
-      image1.style.transform = 'translateX(-250px)';
-      image2.style.transform = 'translateX(-250px)';
-    }
-  </script>
+
+            image1.style.transform = 'translateX(-250px)';
+            image2.style.transform = 'translateX(-250px)';
+            image3.style.transform = 'translateX(-250px)';
+            image4.style.transform = 'translateX(-250px)';
+            image5.style.transform = 'translateX(-250px)';
+        }
+    </script>
 </body>
