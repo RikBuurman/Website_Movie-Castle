@@ -50,6 +50,43 @@ namespace Website_Movie_Castle.Controllers
             return View();
         }
 
+
+        [Route("Avatar_Way_of_Water")]
+        public IActionResult Avatar_Way_of_Water()
+        {
+            return View();
+        }
+
+        [Route("Little_Mermaid")]
+        public IActionResult Little_Mermaid()
+        {
+            return View();
+        }
+
+        [Route("Guardians_of_The_Galaxy")]
+        public IActionResult Guardians_of_The_Galaxy()
+        {
+            return View();
+        }
+
+        [Route("Puss_In_Boots")]
+        public IActionResult Puss_In_Boots()
+        {
+            return View();
+        }
+
+        [Route("Avengers_endgame")]
+        public IActionResult Avengers_endgame()
+        {
+            return View();
+        }
+
+
+
+
+
+
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
