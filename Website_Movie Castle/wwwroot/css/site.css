@@ -1,10 +1,14 @@
 
 iframe {
-    padding-top:30px
+    margin-top: 50px;
 }
 
+a {
+    text-decoration: none;
+    outline: none;
+}
 
-/* Apply default styles to body */
+/* Algemene stjil van de body-stukken van de website */
 body {
     font-family: Copperplate, fantasy;
     font-size: 22px;
@@ -60,7 +64,6 @@ input[type=submit] {
     input[type=submit]:hover {
         background-color: #E0B114;
     }
-
 
 .container {
     border-radius: 5px;
