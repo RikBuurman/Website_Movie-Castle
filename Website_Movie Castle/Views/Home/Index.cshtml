@@ -5,54 +5,54 @@
 }
 
 <p>Welkom bij de website van Movie Castle - dé bioscoop van Vlissingen!</p>
-<head>
-    <style>
-        .container {
-            position: relative;
-            width: 1000px;
-            height: 500px;
-            overflow: hidden;
-        }
 
-        .image {
-            position: absolute;
-            top: 0;
-            transition: transform 0.8s ease;
-        }
+<style>
+.container {
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    overflow: hidden;
+}
 
-        .image1 {
-            left: 50px;
-        }
+.image {
+    position: absolute;
+    top: 0;
+    transition: transform 0.8s ease;
+}
 
-        .image2 {
-            left: 350px;
-        }
+.image1 {
+    left: 50px;
+}
 
-        .image3 {
-            left: 650px;
-        }
+.image2 {
+    left: 350px;
+}
 
-        .image4 {
-            left: -250px;
-        }
+.image3 {
+    left: 650px;
+}
 
-        .image5 {
-            left: 950px;
-        }
+.image4 {
+    left: -250px;
+}
 
-        .move-left {
-            position: absolute;
-            top: 220px;
-            left: 900px;
-        }
+.image5 {
+    left: 950px;
+}
 
-        .move-aside {
-            position: absolute;
-            top: 220px;
-            left: 50px;
-        }
-    </style>
-</head>
+.move-left {
+    position: absolute;
+    top: 220px;
+    left: 900px;
+}
+
+.move-aside {
+    position: absolute;
+    top: 220px;
+    left: 50px;
+}
+
+    </style >
 <body>
     <div class="container">
         <a asp-area="" asp-controller="Home" asp-action="Avengers_endgame"><img class="image image1" src="https://th.bing.com/th/id/OIP.KNfIqaD92jvecpbxNWWQ4wAAAA?pid=ImgDet&rs=1" width="250" height="375"></a>
@@ -98,4 +98,49 @@
             image5.style.transform = 'translateX(-250px)';
         }
     </script>
+ 
+    <div id="cookies">
+        <div class="containercookie">
+            <div class="subcontainer">
+                <div class="cookies">
+                    <p>Deze website maakt gebruik van cookies voor uw beste ervaring <button id="cookies-button">Accepteer</button> </p>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+
+    <script>
+        setCookie = (cName, cValue, expDays) => {
+            let date = new Date();
+            date.setTime(date.getTime() + (expDays*24*60*60*1000));
+            const expires = "expires=" + date.toUTCString();
+            document.cookie = cName + "=" + cValue + "; " + expires + "; path=/";
+        }
+
+        getCookie = (cName) => {
+            const name = cName + "=";
+            const cDecoded = decodeURIComponent(document.cookie);
+            const cArr = cDecoded.split("; ");
+            let value;
+            cArr.forEach(val => {
+                if(val.indexOf(name) === 0) value = val.substring(name.length);
+            })
+
+            return value;
+        }
+
+        document.querySelector("#cookies-button").addEventListener("click", () => {
+            document.querySelector("#cookies").style.display = "none";
+            setCookie("cookie", true, 7);
+        })
+
+        cookieMessage = () => {
+            if(!getCookie("cookie"))
+            document.querySelector("#cookies").style.display = "block";
+        }
+
+        window.addEventListener("load", cookieMessage);
+    </script>
+
 </body>

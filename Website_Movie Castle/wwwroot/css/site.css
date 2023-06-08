@@ -1,3 +1,53 @@
+.containercookie {
+    width:1600px;
+    margin:auto;
+}
+
+.subcontainer {
+    width:85%;
+    margin:auto;
+}
+
+#cookies{
+    width:100%;
+    position:fixed;
+    bottom:0;
+    color:white;
+    z-index:1;
+    display:none;
+}
+
+#cookies-button{
+    border-radius:5px;
+    padding:8px 12px 8px 12px;
+    cursor:pointer;
+    border:3px solid white;
+    background-color:black;
+    color:white;
+}
+
+.cookies{
+    min-height:70px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:10px;
+}
+
+@media(max-width:1600px){
+    .containercookie{
+        width:100%;
+    }
+}
+
+@media(max-width:1024px){
+    .cookies{
+        padding:10px 0;
+    }
+}
+
+
 .rij {
     display: flex;
 }
@@ -6,12 +56,6 @@
     flex: 33.33%;
     margin-top:75px;
     vertical-align:middle;
-}
-
-@media screen and (max-width: 1000px) {
-    .kolom {
-        width: 100%;
-    }
 }
 
 a {
@@ -89,3 +133,4 @@ input[type=submit] {
     border-radius: 5px;
     padding: 20px;
 }
+
