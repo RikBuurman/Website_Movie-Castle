@@ -8,6 +8,15 @@ a {
     outline: none;
 }
 
+text1 {
+    text-align:center;
+    font-size:30px;
+}
+
+text2 {
+    font-size: 22px;
+}
+
 /* Algemene stjil van de body-stukken van de website */
 body {
     font-family: Copperplate, fantasy;
