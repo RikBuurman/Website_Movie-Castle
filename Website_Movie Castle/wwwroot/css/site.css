@@ -1,6 +1,17 @@
+.rij {
+    display: flex;
+}
 
-iframe {
-    margin-top: 50px;
+.kolom {
+    flex: 33.33%;
+    margin-top:75px;
+    vertical-align:middle;
+}
+
+@media screen and (max-width: 1000px) {
+    .kolom {
+        width: 100%;
+    }
 }
 
 a {
