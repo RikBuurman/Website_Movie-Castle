@@ -9,7 +9,7 @@
 <style>
 .container {
     position: relative;
-    width: 1000px;
+    width: 950px;
     height: 500px;
     overflow: hidden;
 }
@@ -44,6 +44,13 @@
     position: absolute;
     top: 220px;
     left: 900px;
+}
+
+body{ 
+    background-image: url('https://www.hollandfilmnieuws.nl/files/bioscoopzaal-foto-wong-zihoo-via-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover; 
 }
 
 .move-aside {
@@ -132,7 +139,7 @@
 
         document.querySelector("#cookies-button").addEventListener("click", () => {
             document.querySelector("#cookies").style.display = "none";
-            setCookie("cookie", true, 7);
+            setCookie("cookie", true, 1);
         })
 
         cookieMessage = () => {
