@@ -1,3 +1,12 @@
+a {
+    color:#E0B114;
+}
+
+a:hover {
+    color:#C75910;
+}
+
+
 .containercookie {
     width:1600px;
     margin:auto;
