@@ -33,6 +33,49 @@
                 </div>
             </div>
         </nav>
+            <div id="cookies">
+                <div class="containercookie">
+                    <div class="subcontainer">
+                        <div class="cookies">
+                            <p>Deze website maakt gebruik van cookies voor uw beste ervaring <button id="cookies-button">Accepteer</button> </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <script>
+                setCookie = (cName, cValue, expDays) => {
+                    let date = new Date();
+                    date.setTime(date.getTime() + (expDays * 24 * 60 * 60 * 1000));
+                    const expires = "expires=" + date.toUTCString();
+                    document.cookie = cName + "=" + cValue + "; " + expires + "; path=/";
+                }
+
+                getCookie = (cName) => {
+                    const name = cName + "=";
+                    const cDecoded = decodeURIComponent(document.cookie);
+                    const cArr = cDecoded.split("; ");
+                    let value;
+                    cArr.forEach(val => {
+                        if (val.indexOf(name) === 0) value = val.substring(name.length);
+                    })
+
+                    return value;
+                }
+
+                document.querySelector("#cookies-button").addEventListener("click", () => {
+                    document.querySelector("#cookies").style.display = "none";
+                    setCookie("cookie", true, 1);
+                })
+
+                cookieMessage = () => {
+                    if (!getCookie("cookie"))
+                        document.querySelector("#cookies").style.display = "block";
+                }
+
+                window.addEventListener("load", cookieMessage);
+            </script>
     </header>
     <div class="container">
         <main role="main" class="pb-3">
@@ -44,5 +87,6 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+
 </body>
 </html>
