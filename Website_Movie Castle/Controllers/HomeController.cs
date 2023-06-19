@@ -87,6 +87,12 @@ namespace Website_Movie_Castle.Controllers
             return View();
         }
 
+        [Route("Betalen")]
+        public IActionResult Betalen()
+        {
+            return View();
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

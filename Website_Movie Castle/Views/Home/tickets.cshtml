@@ -3,4 +3,46 @@
 }
 
 <h1>@ViewData["Title"]</h1>
-   
+<div  clas='container'>
+<form action="action_page.php">
+
+    <label for="vnaam">Voornaam</label>
+    <input type="text" id="vnaaam" name="voormaan" placeholder="Uw voornaam..." required>
+
+    <label for="anaam">Achternaam</label>
+    <input type="text" id="anaam" name="achternaam" placeholder="Uw achternaam..." required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Uw e-mailadres..." required>
+
+    <label for="film">Film</label>
+    <select id="film" name="Film">
+        <option value="guardians of the galaxy">Guardians of the Galaxy</option>
+        <option value="avengers endgame">Avengers Endgame</option>
+        <option value="puss in boots">Puss in Boots</option>
+        <option value="avatar">Avatar</option>
+        <option value="little mermaid">Little Mermaid</option>
+    </select>
+    <label for="volwassentickets">Hoeveelheid Volwassentickets (16+)</label>
+    <select id="volwassentickets" name="Volwassentickets">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    <label for="kindertickets">Hoeveelheid Kindertickets</label>
+    <select id="volwassentickets" name="Volwassentickets">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    </form>
+    <button class="buttonticket"> <a class="text-light" asp-area="" asp-controller="Home" asp-action="Betalen">Naar Betalen...</a> </button>
+
+
+</div>
