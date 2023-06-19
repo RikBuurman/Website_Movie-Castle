@@ -6,4 +6,4 @@ namespace Website_Movie_Castle.Models
 
         public bool ShowRequestId => !string.IsNullOrEmpty(RequestId);
     }
-}
+    }
