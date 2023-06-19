@@ -2,23 +2,35 @@
     ViewData["Title"] = "Puss in Boots";
 }
 
+
 <h1>Puss in Boots</h1>
 
-<a asp-area="" asp-controller="Home" asp-action="Puss_In_Boots"><img class="image image2" src="https://www.themoviedb.org/t/p/w500/1NqwE6LP9IEdOZ57NCT51ftHtWT.jpg" width="250" height="375"></a>
-<html>
+<html> 
   <head>
     <style>
+    h1 {
+        margin-bottom: 25px;
+      }
+
+    iframe {
+        padding: 1px;
+        align-content: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
       #container {
         display: block;
       }
 
-     
+
       #grey-box {
         flex: 1;
         background-color: grey;
         padding: 50px;
-        margin-left: 1000px;
+        display: flex;
         color: white;
+        border-radius: 25px;
       }
 
        .image {
@@ -38,14 +50,15 @@
     </style>
   </head>
   <body>
-         <div id="grey-box">
-    it work
+    <div id="grey-box">
+        Beleef dit jaar elk avontuur alsof het je laatste is. Voor het eerst in ruim tien jaar presenteert DreamWorks Animation weer een nieuw avontuur in het Shrek-universum met de terugkeer van onze geliefde, melk drinkende, roekeloze, onbevreesde katachtige in De Gelaarsde Kat 2: De Laatste Wens.
       </div>
-    </div>
-  </body>
-</html>
-<body>
+    <button class="buttonticket"> <a class="text-light" asp-area="" asp-controller="Home" asp-action="Tickets">Koop Tickets!</a> </button>
+
+
+
 
 <iframe width="1120" height="630" src="https://www.youtube.com/embed/tHb7WlgyaUc?autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 </body>
+</html>

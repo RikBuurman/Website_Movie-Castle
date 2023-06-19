@@ -81,10 +81,11 @@ namespace Website_Movie_Castle.Controllers
             return View();
         }
 
-
-
-
-
+        [Route("Tickets")]
+        public IActionResult Tickets()
+        {
+            return View();
+        }
 
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

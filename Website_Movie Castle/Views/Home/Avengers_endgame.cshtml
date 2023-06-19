@@ -6,18 +6,31 @@
 <html>
   <head>
     <style>
+    h1 {
+        margin-bottom: 25px;
+      }
+
+    iframe {
+        padding: 1px;
+        align-content: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
       #container {
         display: block;
       }
 
-     
-      #grey-box {
+
+    #grey-box {
         flex: 1;
         background-color: grey;
         padding: 50px;
-        margin-left: 1000px;
+        display: flex;
         color: white;
-      }
+        border-radius: 25px;
+        }
 
        .image {
             position: relative;
@@ -36,18 +49,14 @@
     </style>
   </head>
   <body>
-         <div id="grey-box">
-    it work
+    <div id="grey-box">
+        De vreselijke gebeurtenissen die door Thanos in gang werden gezet, roeiden de helft van het universum uit en verzwakten de Avengers. De overgebleven Avengers voelen zich genoodzaakt om nog één keer in actie te komen in Avengers: Endgame, de spectaculaire finale van 22 films van Marvel Studios.
       </div>
-    </div>
-  </body>
-</html>
-<body>
-    <div class="container">
-        <a asp-area="" asp-controller="Home" asp-action="Avengers_endgame"><img class="image image1" src="https://th.bing.com/th/id/OIP.KNfIqaD92jvecpbxNWWQ4wAAAA?pid=ImgDet&rs=1" width="250" height="375"></a>
-            </div>
-    </body>
-<body>
+
+    <button class="buttonticket"> <a class="text-light" asp-area="" asp-controller="Home" asp-action="Tickets">Koop Tickets!</a> </button>
+
 
 <iframe width="1120" height="630" src="https://www.youtube.com/embed/TcMBFSGVi1c?autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </body>
+
+</html>

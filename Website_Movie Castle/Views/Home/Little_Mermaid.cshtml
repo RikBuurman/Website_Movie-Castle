@@ -6,27 +6,39 @@
 <html>
   <head>
     <style>
+    h1 {
+        margin-bottom: 25px;
+    }
+
+    iframe {
+        padding: 1px;
+        align-content: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
       #container {
         display: block;
       }
 
-     
-      #grey-box {
+
+    #grey-box {
         flex: 1;
         background-color: grey;
         padding: 50px;
-        margin-left: 1000px;
+        display: flex;
         color: white;
-      }
+        border-radius: 25px;
+    }
 
-       .image {
+     .image {
             position: relative;
             top: 0;
-           }
+     }
 
-        .image1 {
+     .image1 {
             left: 50px;
-        }
+     }
 
       input[type="text"] {
         width: 100%;
@@ -35,15 +47,14 @@
       }
     </style>
   </head>
-  <body>
-         <div id="grey-box">
-    it work
-      </div>
-    </div>
-  </body>
-</html>
 <body>
+    <div id="grey-box">
+        The Little Mermaid vertelt het verhaal van Ariel, een jonge zeemeermin die dolgraag meer wil weten over de wereld buiten de zee. Wanneer ze die wereld bezoekt, valt ze als een blok voor prins Eric en neemt ze grote risico’s om haar hart te volgen.
+      </div>
+    <button class="buttonticket"> <a class="text-light" asp-area="" asp-controller="Home" asp-action="Tickets">Koop Tickets!</a> </button>
+
 
 <iframe width="1120" height="630" src="https://www.youtube.com/embed/kpGo2_d3oYE?autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 </body>
+</html>
