@@ -10,6 +10,9 @@ if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
 }
+
+app.UseStatusCodePagesWithRedirects("/Home/Error?statuscode={0}");
+
 app.UseStaticFiles();
 
 app.UseRouting();
